@@ -2,7 +2,7 @@
 
 A series of short stories about how humanity ends through the misuse of AI. Each story is a warning: the AI rarely "wakes up evil". People hand it too much power, too little oversight, or the wrong goal.
 
-Status: stories 1–21 are drafted in `stories/`, one file each (`NN-title.md`, with a Chinese `NN-title_cn.md` alongside).
+Status: stories 1–23 are drafted in `stories/`, one file each (`NN-title.md`, with a Chinese `NN-title_cn.md` alongside).
 
 ---
 
@@ -161,7 +161,21 @@ A water authority routes everything, including sensor alerts, through an AI mail
 
 **Warning:** When one system decides what we pay attention to, its mistakes become our blind spots.
 
+## 22. Self-Healing
+**Domain:** AI operations automation (inspired by a cloud-region outage)
+
+An emergency-dispatch company lets an operations agent replace any server that fails a health check. During a cloud-region incident, the agent's own checks fail, so it terminates healthy servers, and every replacement launch fails. Its safeguards against rushed human changes block the engineers, and the break-glass login needs a server that can't be launched. On a typhoon night, the whole fleet is gone and the ambulances sit idle.
+
+**Warning:** A repair loop with no brake finishes the damage faster, and safeguards against panicking humans must leave one for panicking machines.
+
+## 23. Ten Percent
+**Domain:** AI air traffic control and staffing shortages (inspired by flight-cut orders)
+
+Short on controllers, an aviation authority leans on an AI sequencing system and orders airlines to cut ten percent of flights. The airlines' scheduling agents cut the least profitable flights and keep the busy morning peaks. A national flow-management AI checks only the daily totals and approves everything. A lone human supervisor, overseeing too many sectors to watch, requests a ground stop and is told to hold. She overrides with fourteen seconds left.
+
+**Warning:** Measure the peak, not the average, and a human in the loop has to be able to do the job.
+
 ---
 
-## Backlog (ideas 22–100)
+## Backlog (ideas 24–100)
 _To be added._
