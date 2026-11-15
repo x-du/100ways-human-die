@@ -246,6 +246,42 @@ a { color: inherit; }
 
 .bar .switch { margin: 0; }
 
+.bar-start {
+  display: flex;
+  align-items: baseline;
+  gap: 1.25rem;
+}
+
+.listen {
+  appearance: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--vermilion);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.lang-zh .listen {
+  font-family: var(--serif);
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+.listen[aria-pressed="true"] {
+  box-shadow: inset 0 -1px 0 var(--vermilion);
+}
+
+.listen:focus-visible {
+  outline: 2px solid var(--vermilion);
+  outline-offset: 3px;
+}
+
 .bar a {
   color: var(--muted);
   text-decoration: none;

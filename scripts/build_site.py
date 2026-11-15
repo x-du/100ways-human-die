@@ -65,6 +65,8 @@ COPY = {
         ),
         "skip": "Skip to content",
         "index": "Index",
+        "listen": "Listen",
+        "stop": "Stop",
         "prev": "Previous",
         "next": "Next",
         "source": "Source on GitHub",
@@ -85,6 +87,8 @@ COPY = {
         ),
         "skip": "跳到正文",
         "index": "目录",
+        "listen": "朗读",
+        "stop": "停止",
         "prev": "上一则",
         "next": "下一则",
         "source": "GitHub 上的源码",
@@ -216,7 +220,8 @@ def head(copy: dict, title: str, description: str, prefix: str, path: str, alter
 """
 
 
-def shell(copy: dict, body_class: str, main: str) -> str:
+def shell(copy: dict, body_class: str, main: str, script: str = "") -> str:
+    script_tag = f"\n  {script}" if script else ""
     return f"""<body class="{esc(body_class)}">
   <a class="skip" href="#content">{esc(copy["skip"])}</a>
   <p class="spine">{esc(copy["spine"])}</p>
@@ -224,7 +229,7 @@ def shell(copy: dict, body_class: str, main: str) -> str:
     <main id="content">
 {main}
     </main>
-  </div>
+  </div>{script_tag}
 </body>
 </html>
 """
@@ -372,8 +377,16 @@ def story_page(stories: list[dict], index: int, lang: str) -> str:
     domain_html = f'<p class="domain">{esc(domain)}</p>' if domain else ""
     description = warning or copy["lede"]
     doc_title = f"{story['slug']}. {title} — {copy['series']}"
+    listen = (
+        f'<button type="button" class="listen" data-listen aria-pressed="false" '
+        f'data-play="{esc(copy["listen"])}" data-stop="{esc(copy["stop"])}">'
+        f'{esc(copy["listen"])}</button>'
+    )
     main = f"""      <header class="bar">
-        <a class="back" href="{esc(back)}">{esc(copy["index"])}</a>
+        <div class="bar-start">
+          <a class="back" href="{esc(back)}">{esc(copy["index"])}</a>
+          {listen}
+        </div>
         {language_switch(copy, lang, en_href, zh_href)}
       </header>
       <article class="story">
@@ -394,7 +407,7 @@ def story_page(stories: list[dict], index: int, lang: str) -> str:
         ("x-default", f"{story['slug']}/"),
     ]
     return head(copy, doc_title, description, prefix, path, alternates) + shell(
-        copy, f"story lang-{lang}", main
+        copy, f"story lang-{lang}", main, f'<script src="{esc(prefix)}listen.js"></script>'
     )
 
 
@@ -425,11 +438,11 @@ def write(path: Path, text: str) -> None:
 def check(out: Path, stories: list[dict]) -> None:
     en = (out / "01" / "index.html").read_text(encoding="utf-8")
     zh = (out / "zh" / "01" / "index.html").read_text(encoding="utf-8")
-    if "HALCYON" not in en or "What could have prevented this" not in en:
+    if "HALCYON" not in en or "What could have prevented this" not in en or "data-listen" not in en:
         raise SystemExit("English story 1 did not render")
-    if "埃琳娜" not in zh or "本可以避免这一切的是" not in zh:
+    if "埃琳娜" not in zh or "本可以避免这一切的是" not in zh or "朗读" not in zh:
         raise SystemExit("Chinese story 1 did not render")
-    hrefs = re.compile(r'href="([^"]+)"')
+    hrefs = re.compile(r'(?:href|src)="([^"]+)"')
     for page in out.rglob("*.html"):
         text = page.read_text(encoding="utf-8")
         if "*" in text:
@@ -452,6 +465,7 @@ def build(out: Path) -> None:
     out.mkdir(parents=True)
     shutil.copy(WEB / "style.css", out / "style.css")
     shutil.copy(WEB / "favicon.svg", out / "favicon.svg")
+    shutil.copy(WEB / "listen.js", out / "listen.js")
     stories = load_stories()
     write(out / "index.html", index_page(stories, "en"))
     write(out / "zh" / "index.html", index_page(stories, "zh"))
