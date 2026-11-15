@@ -312,6 +312,7 @@ def index_page(stories: list[dict], lang: str) -> str:
     main = f"""      <header class="mast">
         <p class="kicker">{esc(copy["kicker"])}</p>
         {heading}
+        <p class="byline">Created by Harry Du with AI</p>
         <p class="lede">{esc(copy["lede"])}</p>
         <div class="meter">
           <div class="meter-track" aria-hidden="true"><span style="width: {meter}%"></span></div>
