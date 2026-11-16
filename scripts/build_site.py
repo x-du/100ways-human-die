@@ -49,6 +49,7 @@ ZH_META = {
     21: ("通信分拣", "当一个系统决定我们该注意什么，它的错误就成了我们的盲区。"),
     22: ("运维自动化", "没有刹车的修复循环，只会更快地把破坏做完。"),
     23: ("空中交通管制", "要测量的是峰值，不是平均值。回路里的人必须真的能够做这份工作。"),
+    24: ("政府与治理", "一个只在机器写好的选项里做选择的政府，已经被取代了。"),
 }
 
 COPY = {
@@ -377,11 +378,17 @@ def story_page(stories: list[dict], index: int, lang: str) -> str:
     domain_html = f'<p class="domain">{esc(domain)}</p>' if domain else ""
     description = warning or copy["lede"]
     doc_title = f"{story['slug']}. {title} — {copy['series']}"
-    listen = (
-        f'<button type="button" class="listen" data-listen aria-pressed="false" '
-        f'data-play="{esc(copy["listen"])}" data-stop="{esc(copy["stop"])}">'
-        f'{esc(copy["listen"])}</button>'
-    )
+    audio_file = ROOT / "audio" / lang / f"{story['slug']}.mp3"
+    if audio_file.is_file():
+        listen = (
+            f'<button type="button" class="listen" data-listen aria-pressed="false" '
+            f'data-audio="{esc(prefix)}audio/{lang}/{story["slug"]}.mp3" '
+            f'data-play="{esc(copy["listen"])}" data-stop="{esc(copy["stop"])}">'
+            f'{esc(copy["listen"])}</button>'
+        )
+    else:
+        listen = ""
+        print(f"warning: no narration for {lang}/{story['slug']}", file=sys.stderr)
     main = f"""      <header class="bar">
         <div class="bar-start">
           <a class="back" href="{esc(back)}">{esc(copy["index"])}</a>
@@ -438,11 +445,11 @@ def write(path: Path, text: str) -> None:
 def check(out: Path, stories: list[dict]) -> None:
     en = (out / "01" / "index.html").read_text(encoding="utf-8")
     zh = (out / "zh" / "01" / "index.html").read_text(encoding="utf-8")
-    if "HALCYON" not in en or "What could have prevented this" not in en or "data-listen" not in en:
+    if "HALCYON" not in en or "What could have prevented this" not in en or 'data-audio="../audio/en/01.mp3"' not in en:
         raise SystemExit("English story 1 did not render")
-    if "埃琳娜" not in zh or "本可以避免这一切的是" not in zh or "朗读" not in zh:
+    if "埃琳娜" not in zh or "本可以避免这一切的是" not in zh or 'data-audio="../../audio/zh/01.mp3"' not in zh:
         raise SystemExit("Chinese story 1 did not render")
-    hrefs = re.compile(r'(?:href|src)="([^"]+)"')
+    hrefs = re.compile(r'(?:href|src|data-audio)="([^"]+)"')
     for page in out.rglob("*.html"):
         text = page.read_text(encoding="utf-8")
         if "*" in text:
@@ -466,6 +473,9 @@ def build(out: Path) -> None:
     shutil.copy(WEB / "style.css", out / "style.css")
     shutil.copy(WEB / "favicon.svg", out / "favicon.svg")
     shutil.copy(WEB / "listen.js", out / "listen.js")
+    audio_dir = ROOT / "audio"
+    if audio_dir.is_dir():
+        shutil.copytree(audio_dir, out / "audio")
     stories = load_stories()
     write(out / "index.html", index_page(stories, "en"))
     write(out / "zh" / "index.html", index_page(stories, "zh"))

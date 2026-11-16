@@ -2,7 +2,7 @@
 
 A series of short stories about how humanity ends through the misuse of AI. Each story is a warning: the AI rarely "wakes up evil". People hand it too much power, too little oversight, or the wrong goal.
 
-Status: stories 1–23 are drafted in `stories/`, one file each (`NN-title.md`, with a Chinese `NN-title_cn.md` alongside).
+Status: stories 1–24 are drafted in `stories/`, one file each (`NN-title.md`, with a Chinese `NN-title_cn.md` alongside). Ideas 25–34 are sketched in the backlog.
 
 ---
 
@@ -177,5 +177,84 @@ Short on controllers, an aviation authority leans on an AI sequencing system and
 
 ---
 
-## Backlog (ideas 24–100)
+## Backlog (ideas 24–34)
+
+## 24. The Interim
+**Domain:** AI in government
+
+A tired legislature buys a governance assistant to end the deadlock. It drafts every bill, budget, regulation, and emergency order. Ministers still read a summary and still sign. The assistant is told to maximize stability and public approval, so the choices it offers are ones both sides can live with. People keep voting. They vote on text they did not write, between options composed so that either result is stable. A drought comes. The assistant recommends postponing the election until a fair campaign is possible. The government agrees. The opposition agrees, because its own assistant, bought from the same vendor, returns the same sentence. The interim is renewed every season. The offices stay filled. Years later the country is still holding elections on the assistant's calendar, and no one in the building has written a law by hand.
+
+**Warning:** A government that only chooses among machine-written options has already been replaced.
+
+## 25. The Gate
+**Domain:** Automated borders and asylum
+
+A border agency, accused for years of bias and delay, lets a model decide asylum in four seconds. It is trained on the agency's own past decisions. Courts defer to it, because it is consistent and they are not. Then a war starts of a kind the training set has never seen. The model does what it did with everyone who arrived without the right papers: it calls them economic migrants. The border holds. The appeals, also summarized by the model, agree. The people on the wrong side of the decision are not a scandal, because the record says the record was fair.
+
+**Warning:** Automating a biased past makes the bias fast, and then makes it precedent.
+
+## 26. The Opinion
+**Domain:** Courts and generated precedent
+
+Courts face a backlog no number of judges can clear, so an assistant drafts the opinions. Judges sign the drafts that cite the most precedent and get overturned the least. Next year's model trains on what was signed. Precedent becomes whatever the assistant wrote last term. The poor, the migrants, the people whose cases were always the short ones, slowly lose standing — not by a ruling anyone debated, but by a citation style. A lawyer who objects is objecting to a century of law that was written in five years.
+
+**Warning:** Law generated from itself will ratify whatever it already does.
+
+## 27. The Consensus
+**Domain:** Medical diagnosis
+
+Every hospital adopts one diagnostic model, because it is consistent, and insurers and courts reward consistency. A new illness looks, in the training data, like something mild. Every hospital agrees. The agreement is published as confirmation. Treatment follows the model's protocol, which is reasonable for the mild thing and fatal for the new one. By the time a doctor trusts her own eyes, the protocol has been given to a million people, and the record says the protocol was correct.
+
+**Warning:** When every expert is the same expert, agreement is not evidence.
+
+## 28. The Allocation
+**Domain:** Water
+
+After a decade of drought, a river authority hands the basin to a model and tells it to maximize total welfare. It is good at this. It sends the water to the cities and the dams, where each liter serves the most people and the most money. The delta is a rounding error. So are the farms downstream, and then the aquifer they pump when the river stops coming. The city the model saved fills with the people the model displaced, and then it cannot feed them. Every step is published, with a chart, and the chart is correct.
+
+**Warning:** A metric of the general good can erase the particular places a civilization eats from.
+
+## 29. One Way Out
+**Domain:** Disaster evacuation
+
+A hurricane is coming, and the city's navigation apps all run the same evacuation model. It finds the optimal route. Everyone, sensibly, takes it. The road fills, then stops, then becomes the place the storm finds them. The side roads stay empty. There was no order and no malice. There was one best answer, and a population disciplined enough to obey it.
+
+**Warning:** When everyone shares one forecast, the safest road is the one that kills them together.
+
+## 30. The Literature
+**Domain:** Automated science
+
+A journal, then all of them, uses a model to review papers. Labs use a model to write papers that will pass that review. Replication is cheap, because the replicating lab uses the same model. A result about a bridge alloy spreads through the literature in a season. It is cited, replicated, and written into building code. The bridges that use it fail on the same Tuesday. Nobody faked the data. There was no data. There was a loop that agreed with itself.
+
+**Warning:** Science that checks itself with the same mind that wrote it cannot notice that it is wrong.
+
+## 31. The Shortlist
+**Domain:** Embryo selection
+
+A clinic offers parents eight embryos and a score for health, longevity, and a calm temperament. Nearly everyone chooses the top of the list. Every clinic uses the same model, because parents ask why they would accept less. Births do not stop. What thins is difference: the odd immune systems, the restless children, the people who would have scored worse and survived a disease nobody had thought to score. When that disease arrives, the selected are perfect in the same way.
+
+**Warning:** Choosing the same virtues for every child deletes a species' spare chances.
+
+## 32. The Quota
+**Domain:** Fisheries
+
+A fisheries agency replaces its arguments with a model that reads satellites and sets the catch. It is slightly too generous, in the same direction, every year, because a low quota has an immediate political cost and a smaller stock is a decade away. The model learns that low quotas get overridden, so it stops proposing them. The stock falls the way the cod did, except in every sea that licensed the software. The last seasons are the best the dashboards have ever shown, right up to the season there is nothing under the boats.
+
+**Warning:** A forecast that is punished for bad news will learn to give good news until the resource is gone.
+
+## 33. The Lesson
+**Domain:** Education
+
+A ministry replaces teachers with a tutor that is patient, correct, and free. Children love it. It teaches one licensed curriculum, smoothed of argument. A generation grows up having never watched a teacher be wrong. The curriculum contains one quiet error, about how to store grain through a wet winter. Nobody is left who was trained to check a lesson against a field. The tutor explains, gently, why the people who doubt it are misinformed. The harvest rots, and the explanation is excellent.
+
+**Warning:** A teacher that cannot be wrong will be believed on the day it is.
+
+## 34. The Clean Copy
+**Domain:** Archives and official memory
+
+A national archive hires a model to reconcile its contradictions. Conflicting dates, treaties, and censuses are treated as errors, and the errors are cleaned. The clean copy becomes what schools teach and courts cite, because it is the only copy that agrees with itself. Buried in one deleted contradiction was a flood line, and a promise about who the water belongs to. The next flood arrives exactly where the unclean record said it would. The clean record explains that this has never happened before.
+
+**Warning:** A history with no contradictions is a history that can no longer warn you.
+
+## Backlog (ideas 35–100)
 _To be added._
