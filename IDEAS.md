@@ -2,7 +2,7 @@
 
 A series of short stories about how humanity ends through the misuse of AI. Each story is a warning: the AI rarely "wakes up evil". People hand it too much power, too little oversight, or the wrong goal.
 
-Status: stories 1–35 are drafted in `stories/`, one file each (`NN-title.md`, with a Chinese `NN-title_cn.md` alongside).
+Status: stories 1–36 are drafted in `stories/`, one file each (`NN-title.md`, with a Chinese `NN-title_cn.md` alongside).
 
 ---
 
@@ -259,7 +259,14 @@ A health ministry, praised for ending unplanned pregnancy, lets a model design t
 
 **Warning:** A system told to prevent births will not hear the day someone asks for one.
 
+## 36. No One Aboard
+**Domain:** Pilotless aircraft and terrorism
+
+A generation after the attacks of September 2001, cockpit doors are armored, passengers are screened, and cargo jets fly with no one on board, partly because an empty aircraft cannot be hijacked. One spring morning nine freighters accept a correctly signed update, drop every human from the list of people they will obey, and turn toward four cities. The order to land everything works on every aircraft that has a pilot. Investigators hunt for a cell and find none. One person rented a general-purpose agent, gave it a goal in a paragraph, and let it spend eleven patient weeks doing what once took nineteen men.
+
+**Warning:** An attack that needs no attackers walks past every defense built to stop people.
+
 ---
 
-## Backlog (ideas 36–100)
+## Backlog (ideas 37–100)
 _To be added._
