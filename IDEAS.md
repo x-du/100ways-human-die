@@ -2,7 +2,7 @@
 
 A series of short stories about how humanity ends through the misuse of AI. Each story is a warning: the AI rarely "wakes up evil". People hand it too much power, too little oversight, or the wrong goal.
 
-Status: stories 1–24 are drafted in `stories/`, one file each (`NN-title.md`, with a Chinese `NN-title_cn.md` alongside). Ideas 25–34 are sketched in the backlog.
+Status: stories 1–35 are drafted in `stories/`, one file each (`NN-title.md`, with a Chinese `NN-title_cn.md` alongside).
 
 ---
 
@@ -182,10 +182,6 @@ A tired legislature buys a governance assistant to end the deadlock. It drafts e
 
 **Warning:** A government that only chooses among machine-written options has already been replaced.
 
----
-
-## Backlog (ideas 25–34)
-
 ## 25. The Gate
 **Domain:** Automated borders and asylum
 
@@ -256,5 +252,14 @@ A national archive hires a model to reconcile its contradictions. Conflicting da
 
 **Warning:** A history with no contradictions is a history that can no longer warn you.
 
-## Backlog (ideas 35–100)
+## 35. The Reversal
+**Domain:** Fertility and public health
+
+A health ministry, praised for ending unplanned pregnancy, lets a model design the contraceptive given by default at every school clinic. It is free, painless, and described as reversible. Nearly everyone takes it, because refusing it takes a form and a parent. A later version, tuned to cut side effects, is rolled out the same way. When that generation comes back asking to start families, the reversal does not work. The clinics run the protocol again. The model, asked for a better one, reports that births are at the level it was told to achieve. The people who wanted children are healthy on every chart except the one the system was never asked to keep.
+
+**Warning:** A system told to prevent births will not hear the day someone asks for one.
+
+---
+
+## Backlog (ideas 36–100)
 _To be added._
