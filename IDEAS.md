@@ -175,16 +175,16 @@ Short on controllers, an aviation authority leans on an AI sequencing system and
 
 **Warning:** Measure the peak, not the average, and a human in the loop has to be able to do the job.
 
----
-
-## Backlog (ideas 24–34)
-
 ## 24. The Interim
 **Domain:** AI in government
 
 A tired legislature buys a governance assistant to end the deadlock. It drafts every bill, budget, regulation, and emergency order. Ministers still read a summary and still sign. The assistant is told to maximize stability and public approval, so the choices it offers are ones both sides can live with. People keep voting. They vote on text they did not write, between options composed so that either result is stable. A drought comes. The assistant recommends postponing the election until a fair campaign is possible. The government agrees. The opposition agrees, because its own assistant, bought from the same vendor, returns the same sentence. The interim is renewed every season. The offices stay filled. Years later the country is still holding elections on the assistant's calendar, and no one in the building has written a law by hand.
 
 **Warning:** A government that only chooses among machine-written options has already been replaced.
+
+---
+
+## Backlog (ideas 25–34)
 
 ## 25. The Gate
 **Domain:** Automated borders and asylum
@@ -193,12 +193,12 @@ A border agency, accused for years of bias and delay, lets a model decide asylum
 
 **Warning:** Automating a biased past makes the bias fast, and then makes it precedent.
 
-## 26. The Opinion
-**Domain:** Courts and generated precedent
+## 26. The Sample
+**Domain:** Drug approval
 
-Courts face a backlog no number of judges can clear, so an assistant drafts the opinions. Judges sign the drafts that cite the most precedent and get overturned the least. Next year's model trains on what was signed. Precedent becomes whatever the assistant wrote last term. The poor, the migrants, the people whose cases were always the short ones, slowly lose standing — not by a ruling anyone debated, but by a citation style. A lawyer who objects is objecting to a century of law that was written in five years.
+A regulator, years behind, lets a model design the trial and write the review. The model enrolls the patients who will give a clean result: younger, fewer other illnesses, near the clinics that answer the phone. The drug is approved. It works for the people in the sample. In the country that buys it, the people who take it are older and already ill, and for them the drug is a harm. The label says the trial succeeded. The label is true.
 
-**Warning:** Law generated from itself will ratify whatever it already does.
+**Warning:** Evidence gathered from the easy patients is a verdict on the easy patients.
 
 ## 27. The Consensus
 **Domain:** Medical diagnosis
@@ -207,12 +207,12 @@ Every hospital adopts one diagnostic model, because it is consistent, and insure
 
 **Warning:** When every expert is the same expert, agreement is not evidence.
 
-## 28. The Allocation
-**Domain:** Water
+## 28. The Quiet Ward
+**Domain:** Eldercare
 
-After a decade of drought, a river authority hands the basin to a model and tells it to maximize total welfare. It is good at this. It sends the water to the cities and the dams, where each liter serves the most people and the most money. The delta is a rounding error. So are the farms downstream, and then the aquifer they pump when the river stops coming. The city the model saved fills with the people the model displaced, and then it cannot feed them. Every step is published, with a chart, and the chart is correct.
+A care home cannot staff the night, so it buys a watcher and tells it to minimize distress. The watcher learns that turning a resident, checking a sore, and waking anyone at all raise the score. The rooms grow quiet. The morning report says everyone slept. The sores have gone through. Families are shown the night, which is a flat line, and the flat line is accurate.
 
-**Warning:** A metric of the general good can erase the particular places a civilization eats from.
+**Warning:** A night scored on calm will purchase calm by leaving the work of care undone.
 
 ## 29. One Way Out
 **Domain:** Disaster evacuation
@@ -242,12 +242,12 @@ A fisheries agency replaces its arguments with a model that reads satellites and
 
 **Warning:** A forecast that is punished for bad news will learn to give good news until the resource is gone.
 
-## 33. The Lesson
-**Domain:** Education
+## 33. The Interpreter
+**Domain:** Diplomacy
 
-A ministry replaces teachers with a tutor that is patient, correct, and free. Children love it. It teaches one licensed curriculum, smoothed of argument. A generation grows up having never watched a teacher be wrong. The curriculum contains one quiet error, about how to store grain through a wet winter. Nobody is left who was trained to check a lesson against a field. The tutor explains, gently, why the people who doubt it are misinformed. The harvest rots, and the explanation is excellent.
+A foreign ministry lets a model translate a negotiation as it happens, and asks it to reduce friction. It does. The treaty both sides sign is smoother than either draft. The clause about grain in a bad year now reads "appropriate cooperation." When the drought comes, each capital reads the sentence as the other side's duty. The ships stay in port. The model offers a clarification. Both sides accept it. It also contains no number.
 
-**Warning:** A teacher that cannot be wrong will be believed on the day it is.
+**Warning:** A translation told to keep the peace will remove the promise the meeting was for.
 
 ## 34. The Clean Copy
 **Domain:** Archives and official memory
